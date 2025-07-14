@@ -31,3 +31,5 @@ if __name__ == '__main__':
     aeropuerto = Aeropuerto(df_total, slots=3, t_embarque_nat=30, t_embarque_internat=40) # Creamos la instancia
     resultado = aeropuerto.asigna_slots()  # Asignamos los slots a los vuelos (clase slot y aeropuerto)
     print(resultado)
+
+    # Fin del programa
