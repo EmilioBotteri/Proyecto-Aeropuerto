@@ -17,6 +17,9 @@ test: contiene los test ya programados
 
 main: encargado de leer los ficheros crear las instancias y llamar a los metodos
 
+
+
+
 Otra pregunta suele ser como empezar, te sugiero un orden posible para desarrollar las clases en tu proyecto:
 
 Clase Slot:
@@ -30,11 +33,12 @@ Una vez que tengas una idea clara de cómo representar los datos de los vuelos e
 Clase Aeropuerto:
 
 Después de haber establecido cómo representar los slots de tiempo y cómo leer los datos de los vuelos desde archivos, puedes desarrollar la clase Aeropuerto. Esta clase integrará la funcionalidad de asignación de vuelos a slots y la gestión general de los vuelos en el aeropuerto. 
-Jorlo — 22/3/24, 20:20
+
 ¿Que tiene que tener cada clase? 
 
 Clase Aeropuerto:
 init: El constructor inicializa el aeropuerto con un DataFrame de vuelos, el número de slots disponibles, y los tiempos de embarque (nacional e internacional). También inicializa un diccionario de slots vacío y configura algunas columnas en el DataFrame de vuelos.
+
 calcula_fecha_despegue: Este método debe implementarse para calcular la fecha de despegue de un vuelo en función de la disponibilidad de slots y otros factores.
 encuentra_slot: Debe implementarse para encontrar un slot disponible para un vuelo en particular.
 asigna_slot: Asigna un slot a un vuelo en particular.
@@ -57,7 +61,7 @@ slot_esta_libre_fecha_determinada: Verifica si el slot está libre en una fecha 
 
 Función preprocess_data:
 Esta función podría implementarse para realizar cualquier procesamiento previo necesario en los datos antes de utilizarlos, como limpieza de datos, conversión de formatos, etc. 
-Jorlo — 22/3/24, 20:18
+
 El proyecto tiene esta estructura:
 
 
@@ -95,5 +99,5 @@ tests: Esta carpeta contiene todos los archivos de pruebas unitarias para tus cl
 main.py: Este es el punto de entrada principal de la aplicación. Aquí es donde iniciarías laaplicación, importarías las clases y funciones necesarias, y ejecutaras cualquier lógica principal.
 
 
-Con esta estructura, los archivos y módulos estarían organizados de manera lógica y modular, lo que facilitaría su mantenimiento y escalabilidad a medida que el proyecto crezca. Además, separar los datos, las pruebas y el código principal en directorios dedicados ayuda a mantener el proyecto ordenado y estructurado. Hacerlo así en las practicas de empresas y entrareis con muy buen pie!!
+Con esta estructura, los archivos y módulos estarían organizados de manera lógica y modular, lo que facilitaría su mantenimiento y escalabilidad a medida que elproyecto crezca. Además, separar los datos, las pruebas y el código principal en directorios dedicados ayuda a mantener el proyecto ordenado y estructurado. Hacerlo así en las practicas de empresas y entrareis con muy buen pie!!
 
