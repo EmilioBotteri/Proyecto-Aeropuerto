@@ -23,11 +23,11 @@ if __name__ == '__main__':
     path_3 = os.path.abspath('./data/vuelos_3.json')
 
     lector1 = Lector(path_1).lee_archivo()
-    lector2 = Lector(path_2).lee_archivo()  # Leemos los archivos (clase Lector)
+    lector2 = Lector(path_2).lee_archivo()  # Leemos los archivos (clase Lector).
     lector3 = Lector(path_3).lee_archivo()
 
-    df_total = preprocess_data([lector1, lector2, lector3])  # Preparamos los datos y juntamos df (clase preprocess_data)
+    df_total = preprocess_data([lector1, lector2, lector3])  # Preparamos los datos y juntamos df (clase preprocess_data).
 
-    aeropuerto = Aeropuerto(df_total, slots=3, t_embarque_nat=30, t_embarque_internat=40) # Creamos la instancia
-    resultado = aeropuerto.asigna_slots()  # Asignamos los slots a los vuelos (clase slot y aeropuerto)
+    aeropuerto = Aeropuerto(df_total, slots=3, t_embarque_nat=30, t_embarque_internat=40) # Creamos la instancia.
+    resultado = aeropuerto.asigna_slots()  # Asignamos los slots a los vuelos (clase slot y aeropuerto).
     print(resultado)
